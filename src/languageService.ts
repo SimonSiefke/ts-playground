@@ -17,14 +17,6 @@ function getDefaultCompilerOptions(tsModule: typeof import("typescript")) {
   return defaultCompilerOptions;
 }
 
-/**
- * Manges 4 set of files
- *
- * - `vue` files in workspace
- * - `js/ts` files in workspace
- * - `vue` files in `node_modules`
- * - `js/ts` files in `node_modules`
- */
 export function getServiceHost(
   tsModule: typeof import("typescript"),
   virtualFileSystem: VirtualFileSystem,
